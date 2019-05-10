@@ -21,11 +21,11 @@
       */
         $('#pagepiling').pagepiling({
           menu:"#menu",
-          anchors: ['page1', 'page2', 'page3', 'page4'],
+          anchors: ['page1', 'page2', 'page3', 'page4' , 'page5'],
           sectionsColor: ['white', '#222', '#2C3E50', '#39C'],
           navigation: {
             'position': 'right',
-            'tooltips': ['About me', 'Page 2', 'Page 3', 'Page 4']
+            'tooltips': ['Resume', 'About me', 'Skills', 'Portfolio' , 'Certificate']
           },
           afterRender: function(){
             $('#pp-nav').addClass('custom');
@@ -91,11 +91,15 @@
       }
       #pp-nav li:nth-child(3) span:before
       {
-        content: "\f0b1";
+        content: "\f55b";
       }
       #pp-nav li:nth-child(4) span:before
       {
-        content: "\f0a3";
+        content: "\f0b1";
+      }
+      #pp-nav li:nth-child(5) span:before
+      {
+        content: "\f5a2";
       }
       #pp-nav li {
         margin:20px;
@@ -124,19 +128,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto" id="#menu">
       <li class="nav-item">
-        <a class="nav-link" href="#page1">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#page2">About me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#page2">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#page3">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#page4">Certificate</a>
+        <a class="nav-link" href="#page1">Blog</a>
       </li>
     </ul>
   </div>
@@ -197,6 +189,20 @@
             </div>
         </div>
       </div>
+      <div class="section text-white bg-dark" id="section5">
+        <div role="main" class="inner cover mb-auto mt-auto">
+            <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
+            <div class="container">
+              <p class="lead">
+                Full stack web developer
+              </p>
+              <p class="lead">
+              <a href="#page2" class="btn btn-lg btn-secondary">About me</a>
+              </p>
+            </div>
+        </div>
+      </div>
+
 
   </div>
 </body></html>
