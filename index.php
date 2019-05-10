@@ -8,7 +8,7 @@
     
 
     <!-- Bootstrap core CSS -->
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/jquery.pagepiling.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -20,8 +20,9 @@
       * Plugin intialization
       */
         $('#pagepiling').pagepiling({
+          menu:"#menu",
           anchors: ['page1', 'page2', 'page3', 'page4'],
-          sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
+          sectionsColor: ['white', '#222', '#2C3E50', '#39C'],
           navigation: {
             'position': 'right',
             'tooltips': ['About me', 'Page 2', 'Page 3', 'Page 4']
@@ -69,55 +70,133 @@
           font-size: 3.5rem;
         }
       }
+      #pp-nav span{
+        border:none;
+        background:transparent;
+      }
+      #pp-nav li span:before
+      {
+        font-family: "Font Awesome 5 Free"; font-weight: 900;
+        font-size: 20px;
+        padding: 5px;
+        color: #ccc;
+      }
+      #pp-nav li:nth-child(1) span:before
+      {
+        content: "\f007";
+      }
+      #pp-nav li:nth-child(2) span:before
+      {
+        content: "\f2bb";
+      }
+      #pp-nav li:nth-child(3) span:before
+      {
+        content: "\f0b1";
+      }
+      #pp-nav li:nth-child(4) span:before
+      {
+        content: "\f0a3";
+      }
+      #pp-nav li {
+        margin:20px;
+      }
+      #pp-nav li .active span:before{
+          
+          border-bottom : 1px solid;
+          border-top: 1px solid;
+          color: white;
+      }
+      #pp-nav li .active span{
+          background: transparent;
+          border:none;
+      }
     </style>
     <!-- Custom styles for this template -->
   </head>
-  <body class="text-center">
-    
-    <div id="pagepiling">
-      <div class="section bg-dark text-white" id="section1" style="background : url('https://wallpapercave.com/wp/wp2501097.jpg');">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <div role="main" class="inner cover mb-auto mt-auto">
-    <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
-    <div class="container">
-      <p class="lead">
-        Full stack web developer
-      </p>
-    <p class="lead">
-      <a href="#page2" class="btn btn-lg btn-secondary">About me</a>
-    </p>
-    </div>
-  </main>
 
-</div>
-      </div>
-      <div class="section" id="section2">
-        <div class="intro">
-          <div id="colors"></div>
-          <h1>jQuery plugin</h1>
-          <p>Pile your sections one over another and access them scrolling or by URL!</p>
-          <div id="markup">
-            <script src="https://gist.github.com/alvarotrigo/4a87a4b8757d87df8a72.js"></script>
+  <body class="text-center" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent bg-light fixed-top" id="#menu">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" id="#menu">
+      <li class="nav-item">
+        <a class="nav-link" href="#page1">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#page2">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#page2">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#page3">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#page4">Certificate</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div id="pagepiling">
+      <div class="section bg-dark text-white" id="section1">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <div role="main" class="inner cover mb-auto mt-auto">
+            <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
+            <div class="container">
+              <p class="lead">
+                Full stack web developer
+              </p>
+              <p class="lead">
+              <a href="#page2" class="btn btn-lg btn-secondary">Download resume</a>
+              </p>
+            </div>
           </div>
+
+          </div>
+      </div>
+      <div class="section text-white" id="section2">
+        <div role="main" class="inner cover mb-auto mt-auto">
+            <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
+            <div class="container">
+              <p class="lead">
+                Full stack web developer
+              </p>
+              <p class="lead">
+              <a href="#page2" class="btn btn-lg btn-secondary">About me</a>
+              </p>
+            </div>
         </div>
       </div>
-      <div class="section" id="section3">
-        <div class="intro">
-          <h1>Configurable</h1>
-          <p>Plenty of options, methods and callbacks to use.</p>
-          <div id="colors2"></div>
-          <div id="colors3"></div>
+      <div class="section text-white" id="section3">
+        <div role="main" class="inner cover mb-auto mt-auto">
+            <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
+            <div class="container">
+              <p class="lead">
+                Full stack web developer
+              </p>
+              <p class="lead">
+              <a href="#page2" class="btn btn-lg btn-secondary">About me</a>
+              </p>
+            </div>
         </div>
       </div>
-      <div class="section" id="section4">
-        <div class="intro">
-          <h1>Compatible</h1>
-          <p>Designed to work on tablet and mobile devices.</p>
-          <p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
+      <div class="section text-white" id="section4">
+        <div role="main" class="inner cover mb-auto mt-auto">
+            <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
+            <div class="container">
+              <p class="lead">
+                Full stack web developer
+              </p>
+              <p class="lead">
+              <a href="#page2" class="btn btn-lg btn-secondary">About me</a>
+              </p>
+            </div>
         </div>
       </div>
 
   </div>
-
-
 </body></html>
