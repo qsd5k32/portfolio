@@ -1,247 +1,284 @@
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Iam belgacemi mohamed seddik i am full stack web developer i have experience with (html , css , javascript , php , laravel )">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>B seddik Full stack web developer</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pagepiling-js-version-kostyast@2.0.5/jquery.pagepiling.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Iam belgacemi mohamed seddik i am full stack web developer i have experience with (html , css , javascript , php , laravel )">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>B seddik Full stack web developer</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/pagepiling-js-version-kostyast@2.0.5/jquery.pagepiling.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
 
       /*
-      * Plugin intialization
-      */
-        $('#pagepiling').pagepiling({
-          menu:"#menu",
-          anchors: ['page1', 'page2', 'page3', 'page4' , 'page5'],
-          sectionsColor: ['white', '#222', '#2C3E50', '#39C'],
-          navigation: {
-            'position': 'right',
-            'tooltips': ['Resume', 'About me', 'Skills', 'Portfolio' , 'Certificate']
-          },
-          afterRender: function(){
+       * Plugin intialization
+       */
+      $('#pagepiling').pagepiling({
+        menu: "#menu",
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+        sectionsColor: ['white', '#222', '#2C3E50', '#39C'],
+        navigation: {
+          'position': 'right',
+          'tooltips': ['Resume', 'About me', 'Skills', 'Portfolio', 'Certificate']
+        },
+        afterRender: function () {
+          $('#pp-nav').addClass('custom');
+        },
+        afterLoad: function (anchorLink, index) {
+          if (index > 1) {
+            $('#pp-nav').removeClass('custom');
+          } else {
             $('#pp-nav').addClass('custom');
-          },
-          afterLoad: function(anchorLink, index){
-            if(index>1){
-              $('#pp-nav').removeClass('custom');
-            }else{
-              $('#pp-nav').addClass('custom');
-            }
           }
+        }
       });
 
 
       /*
-        * Internal use of the demo website
-        */
-        $('#showExamples').click(function(e){
+       * Internal use of the demo website
+       */
+      $('#showExamples').click(function (e) {
         e.stopPropagation();
         e.preventDefault();
         $('#examplesList').toggle();
       });
 
-      $('html').click(function(){
+      $('html').click(function () {
         $('#examplesList').hide();
       });
-      });
-    </script>
+    });
+  </script>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      * {
-        font-family: 'Roboto', sans-serif;
-      }
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      #pp-nav span{
-        border:none;
-        background:transparent;
-      }
-      #pp-nav li span:before
-      {
-        font-family: "Font Awesome 5 Free"; font-weight: 900;
-        font-size: 20px;
-        padding: 5px;
-        color: #bdc3c7;
-      }
-      #pp-nav li:nth-child(1) span:before
-      {
-        content: "\f007";
-      }
-      #pp-nav li:nth-child(2) span:before
-      {
-        content: "\f2bb";
-      }
-      #pp-nav li:nth-child(3) span:before
-      {
-        content: "\f55b";
-      }
-      #pp-nav li:nth-child(4) span:before
-      {
-        content: "\f0b1";
-      }
-      #pp-nav li:nth-child(5) span:before
-      {
-        content: "\f5a2";
-      }
-      #pp-nav li {
-        margin:20px;
-      }
-      #pp-nav li .active span:before{
-          color: #ecf0f1;
-      }
-      #pp-nav li .active span{
-          background: transparent;
-          border:none;
-      }
-    </style>
-    <!-- Custom styles for this template -->
-  </head>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
 
-  <body class="text-center" >
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent bg-light fixed-top" id="#menu">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    * {
+      font-family: 'Roboto', sans-serif;
+    }
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto" id="#menu">
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#page1">Blog</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <div id="pagepiling">
-      <div class="section bg-image text-white" id="section1" style="background: url('assets/images/background.jpg')no-repeat;background-size: 100% 100%">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="background-color: rgba(1,1,1,0.8);">
-          <div role="main" class="inner cover mb-auto mt-auto">
-            <h1 class="cover-heading font-weight">Belgacemi Mohamed Seddik</h1>
-            <div class="container">
-              <p class="lead text-secondary">
-                Full stack web developer
-              </p>
-              <p class="lead">
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    #pp-nav span {
+      border: none;
+      background: transparent;
+    }
+
+    #pp-nav li span:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 20px;
+      padding: 5px;
+      color: #bdc3c7;
+    }
+
+    #pp-nav li:nth-child(1) span:before {
+      content: "\f007";
+    }
+
+    #pp-nav li:nth-child(2) span:before {
+      content: "\f2bb";
+    }
+
+    #pp-nav li:nth-child(3) span:before {
+      content: "\f55b";
+    }
+
+    #pp-nav li:nth-child(4) span:before {
+      content: "\f0b1";
+    }
+
+    #pp-nav li:nth-child(5) span:before {
+      content: "\f5a2";
+    }
+
+    #pp-nav li {
+      margin: 20px;
+    }
+
+    #pp-nav li .active span:before {
+      color: #ecf0f1;
+    }
+
+    #pp-nav li .active span {
+      background: transparent;
+      border: none;
+    }
+  </style>
+  <!-- Custom styles for this template -->
+</head>
+
+<body class="text-center">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent bg-light fixed-top" id="#menu">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" id="#menu">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#page1">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="pagepiling">
+    <div class="section bg-image text-white" id="section1"
+      style="background: url('assets/images/background.jpg')no-repeat;background-size: 100% 100%">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
+        style="background-color: rgba(1,1,1,0.8);">
+        <div role="main" class="inner cover mb-auto mt-auto">
+          <h1 class="cover-heading font-weight">Belgacemi Mohamed Seddik</h1>
+          <div class="container">
+            <p class="lead text-secondary">
+              Full stack web developer
+            </p>
+            <p class="lead">
               <a href="#page2" class="btn btn-lg btn-secondary">Download resume</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="section bg-dark text-white" id="section2">
+      <div role="main" class="inner cover mb-auto mt-auto">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <h2 class="text-left mb-3 font-weight">Belgacemi Mohamed Seddik</h2>
+              <p class="text-left">
+                I am a full stack developer, I am certified in Harvard CS50 and in Google garage fundamental of
+                marketing i have a clear idea about search engine optimization and how it's working , I have also
+                knowledge about website performance and how to improve it, I'm bachelor degree in mechanical
+                engineering.
+              </p>
+              <p class="text-left">
+                I can apply ideas to websites i have experience in PHP and Laravel framework,
+                and others css js libraries and i comfort with it
+                i delivery all my works in time and with high quality
+
+                all my code are readable I use clean code rules in all my works in my projects that was making it web
+                development it my passion .
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="section text-white" id="section3">
+      <div role="main" class="inner cover mb-auto mt-auto">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-html5 fa-4x"></i>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-css3 fa-4x"></i>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-php fa-4x"></i>
+            </div>
 
+
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-bootstrap fa-4x"></i>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-js-square fa-4x"></i>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-laravel fa-4x"></i>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-vuejs fa-4x"></i>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-git-alt fa-4x"></i>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-linux fa-4x"></i>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-cpanel fa-4x"></i>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-5">
+              <i class="fab fa-wordpress fa-4x"></i>
+            </div>
           </div>
+        </div>
       </div>
-      <div class="section bg-light" id="section2">
-        <div role="main" class="inner cover mb-auto mt-auto">
-            <div class="container">
-              <div class="row">
-                <div class="col-8">
-                  <h2 class="text-left mb-3">Belgacemi Mohamed Seddik</h2>
-                  <p class="text-left">
-                    I am a full stack developer, I am certified in Harvard CS50 and in Google garage fundamental of marketing i have a clear idea about search engine optimization and how it's working , I have also knowledge about website performance and how to improve it, I'm bachelor degree in mechanical engineering.
-                  </p>
-                  <p class="text-left">
-                    I can apply ideas to websites i have experience in PHP and Laravel framework,
-                    and others css js libraries and i comfort with it 
-                    i delivery all my works in time and with high quality 
-                    
-                    all my code are readable I use clean code rules in all my works in my projects that was making it web development it my passion .
-                  </p>
+    </div>
+    <div class="section" id="section4">
+      <div role="main" class="inner cover mb-auto mt-auto">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://mostaql.hsoubcdn.com/uploads/302005-VAJfJ-1557433002-5cd48aaa7f55f.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Axelearn</h5>
+                  <p class="card-text text-muted">E-learning platform</p>
+                  <a href="https://axelearn.org"  class="btn btn-primary">link</a>
                 </div>
               </div>
             </div>
-        </div>
-      </div>
-      <div class="section text-white" id="section3">
-        <div role="main" class="inner cover mb-auto mt-auto">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-html5 fa-4x"></i>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-css3 fa-4x"></i>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-php fa-4x"></i>
-                </div>
-              
-              
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-bootstrap fa-4x"></i>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-js-square fa-4x"></i>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-laravel fa-4x"></i>
-                </div>
-              
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-vuejs fa-4x"></i>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-git-alt fa-4x"></i>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-linux fa-4x"></i>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-cpanel fa-4x"></i>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 p-5">
-                  <i class="fab fa-wordpress fa-4x"></i>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://mostaql.hsoubcdn.com/uploads/302005-UE6jL-1557437181-5cd49afd86bc2.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Fylo challenge</h5>
+                  <p class="card-text text-muted">Challenge from mentor</p>
+                  <a href="https://seddik32.github.io/frontend-challenge/" target="_blank" class="btn btn-primary">link</a>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-      <div class="section text-white" id="section4">
-        <div role="main" class="inner cover mb-auto mt-auto">
-            <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
-            <div class="container">
-              <p class="lead">
-                Full stack web developer
-              </p>
-              <p class="lead">
-              <a href="#page2" class="btn btn-lg btn-secondary">About me</a>
-              </p>
-            </div>
+    </div>
+    <div class="section text-white bg-dark" id="section5">
+      <div role="main" class="inner cover mb-auto mt-auto">
+        <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
+        <div class="container">
+          <p class="lead">
+            Full stack web developer
+          </p>
+          <p class="lead">
+            <a href="#page2" class="btn btn-lg btn-secondary">About me</a>
+          </p>
         </div>
       </div>
-      <div class="section text-white bg-dark" id="section5">
-        <div role="main" class="inner cover mb-auto mt-auto">
-            <h1 class="cover-heading">Belgacemi Mohamed Seddik</h1>
-            <div class="container">
-              <p class="lead">
-                Full stack web developer
-              </p>
-              <p class="lead">
-              <a href="#page2" class="btn btn-lg btn-secondary">About me</a>
-              </p>
-            </div>
-        </div>
-      </div>
-
-
+    </div>
   </div>
-</body></html>
+  <p class="fixed-bottom text-white">Coded with <i class="fas fa-heart text-danger"></i> by <a href=""
+      class="text-white"><b>B . med seddik</b></a></p>
+</body>
+
+</html>
